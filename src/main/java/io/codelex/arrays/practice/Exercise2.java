@@ -15,16 +15,13 @@ public class Exercise2 {
         System.out.println("Please enter a max number");
         int maxNumber = input.nextInt();
 
-        int myArray[];
+        int[] myArray = new int[maxNumber - minNumber];
         int sum = 0;
 
-        /*
-        fixme
-        for (........) {
-        ........
+        for (int i = 0; i < myArray.length; i++) {
+            myArray[i] = i + minNumber;
+            sum += myArray[i];
         }
-        */
-
         System.out.println("The sum is " + sum);
     }
 }

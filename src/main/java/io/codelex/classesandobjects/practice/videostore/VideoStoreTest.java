@@ -1,12 +1,15 @@
 package io.codelex.classesandobjects.practice.videostore;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class VideoStoreTest {
     private static final int COUNT_OF_MOVIES = 3;
+    private static ArrayList<Movie> movies = new ArrayList<Movie>();
 
     public static void main(String[] args) {
         final Scanner keyboard = new Scanner(System.in);
+
 
         while (true) {
             System.out.println("Choose the operation you want to perform ");
@@ -42,15 +45,41 @@ public class VideoStoreTest {
             String movieName = scanner.next();
             System.out.println("Enter rating");
             int rating = scanner.nextInt();
-            //todo - add video
+            movies.add(new Movie(movieName, rating));
         }
     }
 
     private static void rentVideo(Scanner scanner) {
-        //todo - rent video
+        System.out.println("Enter movie name");
+        String movieName = scanner.next();
+        for (Movie movie : movies) {
+            if (movie.getName().equalsIgnoreCase(movieName)) {
+                if (movie.isCheckedOut()) {
+                    System.out.println("Sorry, that movie is already checked out");
+                } else {
+                    movie.setCheckedOut(true);
+                    System.out.println("You have rented " + movieName);
+                }
+                return;
+            }
+        }
+        System.out.println("Sorry, we don't have " + movieName);
     }
 
     private static void returnVideo(Scanner scanner) {
-        //todo - return video
+        System.out.println("Enter movie name");
+        String movieName = scanner.next();
+        for (Movie movie : movies) {
+            if (movie.getName().equalsIgnoreCase(movieName)) {
+                if (movie.isCheckedOut()) {
+                    movie.setCheckedOut(false);
+                    System.out.println("You have returned " + movieName);
+                } else {
+                    System.out.println("That movie was not rented from this store");
+                }
+                return;
+            }
+        }
+        System.out.println("Sorry, we don't have " + movieName);
     }
 }
