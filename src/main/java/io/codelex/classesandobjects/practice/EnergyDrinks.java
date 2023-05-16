@@ -1,24 +1,24 @@
 package io.codelex.classesandobjects.practice;
 
-import io.codelex.NoCodeWrittenException;
-
 public class EnergyDrinks {
-    final int NUMBERED_SURVEYED = 12467;
-    final double PURCHASED_ENERGY_DRINKS = 0.14;
-    final double PREFER_CITRUS_DRINKS = 0.64;
+    final int numberSurveyed = 12467;
+    final double energyDrinkerProc = 0.14;
+    final double preferCitrusProc = 0.64;
 
     public static void main(String[] args) {
-        //fixme
-        //System.out.println("Total number of people surveyed " + NUMBERED_SURVEYED);
-        //System.out.println("Approximately " + energyDrinkers + " bought at least one energy drink");
-        //System.out.println(preferCitrus + " of those " + "prefer citrus flavored energy drinks.");
+        EnergyDrinks monster = new EnergyDrinks();
+        System.out.println("Total number of people surveyed " + monster.numberSurveyed);
+        System.out.println("Approximately " + monster.calculateEnergyDrinkers(monster.numberSurveyed) + " bought at least one energy drink");
+        System.out.println(monster.calculatePreferCitrus(monster.numberSurveyed) + " of those " + "prefer citrus flavored energy drinks.");
     }
 
-    public static double calculateEnergyDrinkers(int numberSurveyed) {
-        throw new NoCodeWrittenException();
+    public double calculateEnergyDrinkers(double numberSurveyed) {
+        double energyDrinkers = Math.floor(numberSurveyed * energyDrinkerProc);
+        return energyDrinkers;
     }
 
-    public static double calculatePreferCitris(int numberSurveyed) {
-        throw new NoCodeWrittenException();
+    public double calculatePreferCitrus(int numberSurveyed) {
+        double preferCitrus = Math.floor(numberSurveyed * energyDrinkerProc * preferCitrusProc);
+        return preferCitrus;
     }
 }
