@@ -18,9 +18,12 @@ public class RandomNumberPositions {
 
         int i;
         boolean foundIt = false;
-
+//todo - search for integer - break when you have found what you searched for
         for (i = 0; i < integers.length; i++) {
-            //todo - search for integer - break when you have found what you searched for
+            if (integers[i] == searchFor) {
+                foundIt = true;
+                break;
+            }
         }
 
         if (foundIt) {
