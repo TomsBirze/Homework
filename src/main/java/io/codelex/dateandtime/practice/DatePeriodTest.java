@@ -19,12 +19,8 @@ public class DatePeriodTest {
 
         DatePeriod intersectionPeriod = firstPeriod.intersection(secondPeriod);
 
-        if (intersectionPeriod != null) {
-            System.out.println("Intersection Period:");
-            System.out.println("Start Date: " + intersectionPeriod.getStart());
-            System.out.println("End Date: " + intersectionPeriod.getEnd());
-        } else {
-            System.out.println("The periods do not intersect.");
-        }
+        System.out.println(intersectionPeriod);
+
+
     }
 }

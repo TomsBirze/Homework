@@ -14,31 +14,45 @@ public class DatePeriod {
         this.end = end;
     }
 
+    public DatePeriod intersection(DatePeriod secondPeriod) {
+        DatePeriod result = null;
+        if (overlaps(secondPeriod)) {
+            if (this.includes(secondPeriod)) {
+                result = new DatePeriod(secondPeriod.start, secondPeriod.end);
+            } else if (secondPeriod.includes(this)) {
+                result = new DatePeriod(this.start, this.end);
+            } else if (secondPeriod.start.isBefore(this.end)) {
+                result = new DatePeriod(this.start, secondPeriod.end);
+            } else {
+                result = new DatePeriod(secondPeriod.start, this.end);
+            }
+        }
+        return result;
+    }
+
+    private boolean includes(DatePeriod second) {
+        return (this.start.equals(second.start) || this.start.isBefore(second.start))
+                && (this.end.equals(second.end) || this.end.isAfter(second.end));
+    }
+
+    private boolean overlaps(DatePeriod second) {
+        return second.start.isBefore(this.end) && second.end.isAfter(this.start);
+    }
+
     public LocalDate getStart() {
         return start;
     }
 
-    public void setStart(LocalDate start) {
-        this.start = start;
-    }
 
     public LocalDate getEnd() {
         return end;
     }
 
-    public void setEnd(LocalDate end) {
-        this.end = end;
+    @Override
+    public String toString() {
+        return "DatePeriod{" +
+                "start=" + start +
+                ", end=" + end +
+                '}';
     }
-
-    public DatePeriod intersection(DatePeriod other) {
-        LocalDate intersectionStart = start.isAfter(other.start) ? start : other.start;
-        LocalDate intersectionEnd = end.isBefore(other.end) ? end : other.end;
-
-        if (intersectionStart.isAfter(intersectionEnd)) {
-            return null;
-        }
-        return new DatePeriod(intersectionStart, intersectionEnd);
-    }
-
-
 }
