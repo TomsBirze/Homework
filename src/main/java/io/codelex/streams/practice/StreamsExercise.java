@@ -1,9 +1,7 @@
 package io.codelex.streams.practice;
 
-import java.util.IntSummaryStatistics;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -12,15 +10,18 @@ import java.util.stream.Stream;
  */
 public class StreamsExercise {
     public static List<Integer> returnSquareRoot(List<Integer> numbers) {
-        throw new UnsupportedOperationException();
+        return numbers.stream()
+                .map(Math::sqrt)
+                .map(Double::intValue)
+                .collect(Collectors.toList());
     }
 
     public static List<Integer> getAgeFromUsers(List<User> user) {
-        throw new UnsupportedOperationException();
+        return user.stream().map(User::getAge).collect(Collectors.toList());
     }
 
     public static List<Integer> getDistinctAges(List<User> users) {
-        throw new UnsupportedOperationException();
+        return users.stream().map(User::getAge).distinct().collect(Collectors.toList());
     }
 
     public static List<User> getLimitedUserList(List<User> users, int limit) {
@@ -32,11 +33,11 @@ public class StreamsExercise {
     }
 
     public static List<String> mapToUpperCase(List<String> strings) {
-        throw new UnsupportedOperationException();
+        return strings.stream().map(String::toUpperCase).collect(Collectors.toList());
     }
 
     public static Integer sum(List<Integer> integers) {
-        throw new UnsupportedOperationException();
+        return integers.stream().mapToInt(Integer::intValue).sum();
     }
 
     public static List<Integer> skip(List<Integer> integers, Integer toSkip) {
@@ -53,7 +54,9 @@ public class StreamsExercise {
 
 
     public static String separateNamesByComma(List<User> users) {
-        throw new UnsupportedOperationException();
+        return users.stream()
+                .map(User::getName)
+                .collect(Collectors.joining(", "));
     }
 
     public static double getAverageAge(List<User> users) {
@@ -117,7 +120,7 @@ public class StreamsExercise {
     }
 
     public static User findOldest(List<User> users) {
-        throw new UnsupportedOperationException();
+        return users.stream().max(Comparator.comparingInt(User::getAge)).orElse(null);
     }
 
     public static int sumAge(List<User> users) {
@@ -125,6 +128,6 @@ public class StreamsExercise {
     }
 
     public static IntSummaryStatistics ageSummaryStatistics(List<User> users) {
-        throw new UnsupportedOperationException();
+        return users.stream().mapToInt(User::getAge).summaryStatistics();
     }
 }
