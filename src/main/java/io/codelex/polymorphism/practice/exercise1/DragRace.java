@@ -1,5 +1,11 @@
 package io.codelex.polymorphism.practice.exercise1;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Stream;
+
+
 /**
  * Take a look at the cars in this package.
  * 1. Extract common behaviour to an interface called Car, and use it in the all classes.
@@ -14,5 +20,47 @@ public class DragRace {
 
     public static void main(String[] args) {
 
+        List<Car> cars = new ArrayList<>();
+
+        Car toyota = new Toyota();
+        Car zigulis = new Zigulis();
+        Car lexus = new Lexus();
+        Car tesla = new Tesla();
+        Car audi = new Audi();
+        Car bmw = new Bmw();
+
+        cars.add(toyota);
+        cars.add(zigulis);
+        cars.add(lexus);
+        cars.add(tesla);
+        cars.add(audi);
+        cars.add(bmw);
+
+        for (int i = 0; i < 10; i++) {
+            int iteration = i + 1;
+            System.out.println("Iteration: " + iteration);
+            Car fastestCar = cars.stream()
+                    .flatMap(car -> applySpeedBoost(car, iteration))
+                    .max(Comparator.comparing(Car::showCurrentSpeed))
+                    .orElse(null);
+
+            if (fastestCar != null) {
+                System.out.println("Fastest car: " + fastestCar.getClass().getSimpleName() + " - Speed: " + fastestCar.showCurrentSpeed());
+            }
+
+            System.out.println();
+        }
+    }
+
+    private static Stream<Car> applySpeedBoost(Car car, int iteration) {
+        if (iteration == 3 && car instanceof Nitros) {
+            Nitros nitrosCar = (Nitros) car;
+            nitrosCar.useNitrousOxideEngine();
+        }
+        for (int i = 0; i < iteration; i++) {
+            car.speedUp();
+        }
+        return Stream.of(car);
     }
 }
+
