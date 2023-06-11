@@ -2,14 +2,10 @@ package io.codelex.oop.summary.generics;
 
 import java.math.BigDecimal;
 
-public class Printer {
+public class Printer<T> {
+    private final T thingToPrint;
 
-    //Fix this class so that any object, not only BigDecimal can be printed
-    //Test the functionality
-
-    private final BigDecimal thingToPrint;
-
-    public Printer(BigDecimal thingToPrint) {
+    public Printer(T thingToPrint) {
         this.thingToPrint = thingToPrint;
     }
 
@@ -17,7 +13,8 @@ public class Printer {
         System.out.println(thingToPrint);
     }
 
-    public BigDecimal getThingToPrint() {
+    public T getThingToPrint() {
         return thingToPrint;
     }
 }
+
