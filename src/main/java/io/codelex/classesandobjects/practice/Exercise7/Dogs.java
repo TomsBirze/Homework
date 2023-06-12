@@ -2,23 +2,32 @@ package io.codelex.classesandobjects.practice.Exercise7;
 
 public class Dogs {
     public static void main(String[] args) {
-        Dog Max = new Dog("Max", "male", "Lady", "Rocky");
-        Dog Rocky = new Dog("Rocky", "male", "Molly", "Sam");
-        Dog Sparky = new Dog("Sparky", "male");
-        Dog Buster = new Dog("Buster", "male", "Lady", "Sparky");
-        Dog Sam = new Dog("Sam", "male");
-        Dog Lady = new Dog("Lady", "female");
-        Dog Molly = new Dog("Molly", "female");
-        Dog Coco = new Dog("Coco", "female", "Molly", "Buster");
+        Dog max = new Dog("Max", "male");
+        Dog rocky = new Dog("Rocky", "male");
+        Dog sparky = new Dog("Sparky", "male");
+        Dog buster = new Dog("Buster", "male");
+        Dog sam = new Dog("Sam", "male");
+        Dog lady = new Dog("Lady", "female");
+        Dog molly = new Dog("Molly", "female");
+        Dog coco = new Dog("Coco", "female");
 
-        Coco.fathersName();
-        Sparky.fathersName();
+        coco.setFather(buster);
+        coco.setMother(molly);
+        max.setMother(molly);
+        max.setFather(rocky);
+        rocky.setFather(sam);
+        rocky.setMother(molly);
+        buster.setFather(sparky);
+        buster.setMother(lady);
 
-        if (Coco.hasSameMotherAs(Rocky)) {
+        coco.fathersName();
+        sparky.fathersName();
+
+        if (coco.hasSameMotherAs(rocky)) {
             System.out.println("Coco and Molly have the same mother.");
         } else {
             System.out.println("Coco and Molly have different mothers.");
         }
-       
+
     }
 }

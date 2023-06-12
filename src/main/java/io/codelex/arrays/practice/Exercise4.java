@@ -28,10 +28,3 @@ public class Exercise4 {
         }
     }
 }
-
-//        for (int i = 0; i < myArray.length; i++) {
-//            if (myArray[i] == numberToCheck) {
-//                System.out.println(myArray[i] + " Contains! " + numberToCheck);
-//            } else {
-//                System.out.println(myArray[i] + " Dose not equal " + numberToCheck);
-//            }

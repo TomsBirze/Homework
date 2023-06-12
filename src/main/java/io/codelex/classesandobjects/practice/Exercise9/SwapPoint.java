@@ -9,12 +9,19 @@ public class SwapPoint {
         this.y = y;
     }
 
-//    public int SwapPointsMethod() {
-//        int temp = x;
-//        x = y;
-//        y = temp;
-//        return SwapPointsMethod();
-//    }
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void swapPointsMethod() {
+        int temp = x;
+        x = y;
+        y = temp;
+    }
 
     @Override
     public String toString() {
