@@ -10,8 +10,8 @@ public class MoneyTransfers {
         System.out.println(accountB);
         System.out.println(accountC);
 
-        accountA.transfer(accountA, accountB, 50);
-        accountB.transfer(accountB, accountC, 25);
+        Account.transfer(accountA, accountB, 50);
+        Account.transfer(accountB, accountC, 25);
 
         System.out.println(accountA);
         System.out.println(accountB);
