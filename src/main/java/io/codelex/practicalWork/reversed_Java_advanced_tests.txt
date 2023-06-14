@@ -1,0 +1,72 @@
+```
+neve era srebmun fo %05 esuaceb 5.0 tuo tnirp dluohS// ;)tnecrePneve(nltnirp.tuo.metsyS
+;)1 == 2 % n >- )n regetnI( ,srebmun(fOtrap = tnecrePneve elbuod
+;)6 ,5 ,4 ,3 ,2 ,1(tsiLsa.syarrA = srebmun >regetnI<tsiL
+
+srettel 4 naht regnol era seman fo %57 esuaceb 57.0 tuo tnirp dluohS// ;)tnecrep(nltnirp.tuo.metsyS
+;)4 > )(htgnel.eman >- )eman gnirtS( ,seman(fOtrap = tnecrep elbuod
+;)"ovarB" ,"anilegnA" ,"reteP" ,"nhoJ"(tsiLsa.syarrA = seman >gnirtS<tsiL
+avaj```
+:krow dluohs ti woh fo elpmaxE
+
+.retemarap sa detacidni noitcnuf eht dna tsil fo epyt yna no desab noitidnoc eht gniyfsitas smeti fo % nruter lliw hcihw ,dohtem fOtrap cireneg eht tnemelpmI
+)gnimmargorp lanoitcnuf + scireneg( ####
+5# esicrexE ##
+
+)ytilanoitcnuf tset ot elif dna redlof esoohc yleerf nac uoy(
+.)kcab eht morf( desrever eb dluohs elif wen eht fo eltit dna tnetnoc ehT .redlof emas eht ni ti evas dna elif yna daer lliw taht margorp a etirW
+)O/I eliF( ####
+4# esicrexE ##
+
+... 4-3-2-1 :nruter dluohs ti "-" rotarapes dna sregetnI rof .g.e
+
+.ssalc eht rof tset a etirW
+
+.rotarapes a htiw meht gnitarapes dna dohtem )(gnirtSot rieht gnillac yb stnemele dessap lla gninioj gnirts a nruter lliw dohtem sihT .stcejbo epyt-T fo rebmun yna yficeps ot uoy swolla taht dohtem )(nioj a evah dna )gnirts( rotarapes a ekat lliw rotcurtsnoc eht ni hcihw ,ssalc >T<renioJ eht ngiseD
+
+)stset + scireneg( ####
+3# esicrexE ##
+
+.nworht era snoitpecxe taht dna smoorhsum htiw teksab ,selppa htiw teksab etaerc ot elbissop sti taht kcehc dna ytilanoitcnuf tset ot tset a etaerC
+
+)scireneg esu tsum dna desu eb tonnac tcejbO ssalc taht snaem ti - noisufnoc esuac ot ton( .emit emas eht ta smoorhsum dna selppa htob erots tonnac ti ,cte smoorhsum ylno ,selppa ylno - smeti fo dnik eno ylno erots nac teksaB !BN ####
+
+.moorhsuM dna elppA sessalc ytpme owt etaerC
+
+.)flesruoy yb detaerc snoitpecxe ,noitpecxEytpmEteksaB ro noitpecxElluFteksaB( noitpecxe emitnur etairporppa eht worht ,etats smeti 01 ta tnemele na dda ro etats smeti 0 ta tnemele na evomer ot stnaw resu a nehW .smeti 01 ot 0 morf erots nac teksab ehT
+
+.)1 yb etats tnerruc eht gnicuder( teksab eht morf tnemele eht sevomer hcihw ,dohtem )(teksaBmorFevomer eht dna )1 yb etats tnerruc eht gnisaercni( teksab eht ot tnemele eht sdda hcihw ,dohtem )(teksaBoTdda eht ddA
+
+.teksab eht ni smeti fo rebmun tnerruc eht dna )smeti fo dnik yna( smeti T elpitlum serots dna teksab a setatimi taht ssalc >T<teksaB a etaerC
+
+)stset + snoitpecxe + scireneg( ####
+
+2# esicrexE ##
+
+.sessalc dlihc ni eb dluohs tahw dna ssalc tnerap ni eb dluohs tahw ediceD
+ .ssalc tcartsba eht dnetxe lliw taht draCtibeD ,draCtiderC sessalc raluger dna draC ssalc tcartsba - sessalc eerht etaerC
+
+000 01 naht erom si drac eht ni yenom eht dna yenom dda uoy nehw emit yreve "yenom hcum ooT :gninraW" tuo tnirp dluohs drac tibeD *
+001 naht ssel si drac eht ni tfel yenom dna drac tiderc morf yenom ekat uoy nehw emit yreve "sdnuf woL :gninraW" tuo tnirp dluohs drac tiderC *
+:sdrac neewteb ecnereffiD
+
+gnitseuqer era uoy tnuoma eht tuo ekat ot elbissop ton sti fi
+ noitpecxEsdnuFhguonEtoN worht dluohs sdrac htob dna yenom ekat ot dna yenom dda ot sdohtem evah dluohs sdrac htoB
+
+drac eht no tfel si yenom hcum woh - ecnalab *
+)elpmaxe rof 540 ,0 htiw trats nac ti tub rebmun tigid eerht( edoc VCC *
+)eman lluf( renwo sti *
+ rebmun sti *
+: evah dluohs drac hcaE
+
+.yllautneve kcab evig ot evah uoy taht yenom s'knab dneps uoy sdrac tiderc htiw tub yenom nwo ruoy dneps uoy
+ drac tibed fo esac ni llehstun a nI .sdrac tiderc dna sdrac tibed - sdrac knab fo sepyt owt tsixe erehT
+.sdrac knaB ####
+
+)snoitpecxe + sessalc tcartsba + ecnatirehni( ####
+
+1# esicrexE ##
+
+tset-decnavda-avaj :HCNARB #
+
+TSET #
