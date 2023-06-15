@@ -1,16 +1,12 @@
-package io.codelex.joiner;
+package io.codelex.practicalWork.joiner;
 
-import io.codelex.practicalWork.joiner.Joiner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-
 public class JoinerTest {
-
-
     @Test
     public void testJoin_withIntegers() {
         Joiner<Integer> joiner = new Joiner<>("-");

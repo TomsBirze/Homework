@@ -3,7 +3,7 @@ package io.codelex.practicalWork.creditCards;
 import java.math.BigDecimal;
 
 public class CardApp {
-    public static void main(String[] args) throws Card.NotEnoughFundsException {
+    public static void main(String[] args) throws NotEnoughFundsException {
 
         Card cardOne = new CreditCard(5423, "Jhon", "023", BigDecimal.valueOf(2330));
         Card cardTwo = new DebitCard(2313, "Billy", "123", BigDecimal.valueOf(5000));

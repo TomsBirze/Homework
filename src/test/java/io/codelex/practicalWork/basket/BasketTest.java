@@ -1,17 +1,12 @@
-package io.codelex.practicalWork;
+package io.codelex.practicalWork.basket;
 
 
-import io.codelex.practicalWork.basket.Apple;
-import io.codelex.practicalWork.basket.Basket;
-import io.codelex.practicalWork.basket.BasketEmptyException;
-import io.codelex.practicalWork.basket.BasketFullException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class BasketTest {
-
     @Test
     public void testAddToBasket() {
         Basket<Apple> applesBasket = new Basket<>();

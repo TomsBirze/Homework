@@ -36,12 +36,6 @@ abstract public class Card {
 
     protected abstract void printWarning();
 
-    static class NotEnoughFundsException extends Exception {
-        public NotEnoughFundsException(String message) {
-            super(message);
-        }
-    }
-
     public BigDecimal getBalance() {
         return balance;
     }
