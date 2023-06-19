@@ -1,7 +1,6 @@
 package io.codelex.quizz;
 
 import java.io.IOException;
-//import java.util.Arrays;
 import java.util.Scanner;
 
 import static io.codelex.quizz.Trivia.randomFactQuestion;
@@ -15,14 +14,13 @@ public class TriviaApp {
             AnswerOptions answerOptions;
             Scanner scanner = new Scanner(System.in);
 
-            while (triviaCount < 10) {
+            while (triviaCount < 20) {
                 String[] randomData = Trivia.random();
                 String randomFact = randomData[0];
                 String extractedNumber = randomData[1];
                 answerOptions = new AnswerOptions(extractedNumber);
 
                 System.out.println("Question: " + randomFactQuestion());
-                System.out.println("Correct answer is: " + extractedNumber);
                 System.out.println("Answer Options:");
                 System.out.println("a: " + answerOptions.getOptionA());
                 System.out.println("b: " + answerOptions.getOptionB());
@@ -93,7 +91,7 @@ public class TriviaApp {
     }
 
     private static void printResult(int triviaCount, int correctAnswers) {
-        System.out.println("Trivia Questions Answered: " + triviaCount + " out of 10.");
+        System.out.println("Trivia Questions Answered: " + triviaCount + " out of 20.");
         System.out.println("Correct Answers: " + correctAnswers);
     }
 }

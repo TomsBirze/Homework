@@ -34,13 +34,4 @@ public class AnswerOptions {
         }
         return sb.toString();
     }
-
-//    private String generateRandomNumber(int length) {
-//        StringBuilder builder = new StringBuilder();
-//        for (int i = 0; i < length; i++) {
-//            int digit = random.nextInt(10); // Generate random digit (0-9)
-//            builder.append(digit);
-//        }
-//        return builder.toString();
-//    }
 }

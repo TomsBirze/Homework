@@ -8,7 +8,6 @@ import java.net.URL;
 public class Trivia {
     protected static final String BASE_URL = "http://numbersapi.com/";
 
-
     public static String[] random() throws IOException {
         URL url = new URL(BASE_URL + "random/trivia");
         BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
@@ -40,7 +39,7 @@ public class Trivia {
         String randomFact = randomData[0];
         String extractedNumber = randomData[1];
 
-        return "What" + randomFact.substring(extractedNumber.length() + 1);
+        return "What " + randomFact.substring(extractedNumber.length() + 1);
     }
 
 }
